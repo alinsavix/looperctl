@@ -1,0 +1,26 @@
+# sekrit stuffs
+credentials.toml
+gsheets_credentials.json
+
+# sqlite stuffs
+*.db
+*.db-shm
+*.db-wal
+
+# python noise
+.env
+.venv
+env/
+venv/
+
+__pycache__/
+*.py[cod]
+
+build/
+dist/
+sdist/
+
+# testing bits (if we have them)
+.tox/
+.nox/
+.pytest_cache/

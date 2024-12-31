@@ -1,0 +1,33 @@
+# I really wish all the available tools supported pyproject.toml properly,
+# so that we didn't need to have a requirements.txt. But that's not the
+# case, so we're stuck with this for now. Probably forever, given how much
+# of a clusterduck the python packaging ecosystem is.
+
+# Main stuffs
+mido
+streamdeck >= 0.9.6
+
+# portmidi ; sys_platform=="darwin"
+python-rtmidi ; sys_platform=="win32" or sys_platform=="linux"
+
+# Meta stuffs
+tdvutil >= 0.0.3
+setuptools
+mypy
+
+# obsws_python
+# watchdog
+# discord-webhook
+# requests
+# peewee
+
+# our standard flake8 bits (...maybe we need a metapackage)
+flake8-async
+flake8-bugbear
+flake8-builtins
+flake8-comprehensions
+flake8-import-conventions
+Flake8-pyproject
+flake8-secure-coding-standard
+flake8_simplify
+flake8-use-pathlib
